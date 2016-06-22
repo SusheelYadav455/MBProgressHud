@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MBProgressHUD.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,26 @@
     // Override point for customization after application launch.
     return YES;
 }
+
+- (void)showLoadingView:(BOOL)isShown activityTitle:(NSString*)title
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (isShown)
+        {
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.window animated:YES];
+            hud.mode = MBProgressHUDModeAnnularDeterminate;
+            hud.labelText = title;
+        }
+        else
+        {
+            [MBProgressHUD hideHUDForView:self.window animated:YES];
+        }
+    });
+}
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

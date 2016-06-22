@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MBProgressHUD.h"
 
 @interface ViewController ()
+{
+    MBProgressHUD *HUD;
+}
 
 @end
 
@@ -17,6 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    HUD = [[MBProgressHUD alloc] initWithView:self.view];
+    
+    HUD.labelText=@"PleaseWait!!";
+    
+    
+    [self.view addSubview:HUD];
+    
+    [HUD show:YES];
+    
+ // To Hide MBProgressHud!!!
+ [HUD show:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning {

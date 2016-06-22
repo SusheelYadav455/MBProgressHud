@@ -15,6 +15,7 @@
 		18FB200A1D1AB2D1001062F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FB20081D1AB2D1001062F6 /* LaunchScreen.storyboard */; };
 		18FB20151D1AB2D1001062F6 /* MBProgressHudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FB20141D1AB2D1001062F6 /* MBProgressHudTests.m */; };
 		18FB20201D1AB2D1001062F6 /* MBProgressHudUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FB201F1D1AB2D1001062F6 /* MBProgressHudUITests.m */; };
+		18FB20301D1AB326001062F6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FB202F1D1AB326001062F6 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		18FB201B1D1AB2D1001062F6 /* MBProgressHudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBProgressHudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FB201F1D1AB2D1001062F6 /* MBProgressHudUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHudUITests.m; sourceTree = "<group>"; };
 		18FB20211D1AB2D1001062F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FB202E1D1AB31F001062F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		18FB202F1D1AB326001062F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		18FB1FEE1D1AB2D0001062F6 = {
 			isa = PBXGroup;
 			children = (
+				18FB202D1D1AB30A001062F6 /* ThirdpartyClasses */,
 				18FB1FF91D1AB2D1001062F6 /* MBProgressHud */,
 				18FB20131D1AB2D1001062F6 /* MBProgressHudTests */,
 				18FB201E1D1AB2D1001062F6 /* MBProgressHudUITests */,
@@ -138,6 +142,15 @@
 				18FB20211D1AB2D1001062F6 /* Info.plist */,
 			);
 			path = MBProgressHudUITests;
+			sourceTree = "<group>";
+		};
+		18FB202D1D1AB30A001062F6 /* ThirdpartyClasses */ = {
+			isa = PBXGroup;
+			children = (
+				18FB202F1D1AB326001062F6 /* MBProgressHUD.m */,
+				18FB202E1D1AB31F001062F6 /* MBProgressHUD.h */,
+			);
+			name = ThirdpartyClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				18FB20021D1AB2D1001062F6 /* ViewController.m in Sources */,
 				18FB1FFF1D1AB2D1001062F6 /* AppDelegate.m in Sources */,
 				18FB1FFC1D1AB2D1001062F6 /* main.m in Sources */,
+				18FB20301D1AB326001062F6 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
